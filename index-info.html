@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>去接乘客</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="bookmark" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<!-- 阿里图标库网址 -->
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_9irvmelbbgt7f1or.css">
+</head>
+<body style="height: 100%">
+	<div class="divBox">
+		<!-- 头部 -->
+		<header class="head-box">
+			<!-- 返回按钮 -->
+			<a href="javascript:history.back()" title="" class="back-btn">
+				<i class="iconfont icon-l"></i>返回
+			</a>
+			<a href="javascript:;" title="" class="del-order-btn">取消订单</a>
+			<span>去接乘客</span>
+		</header>
+		<!-- 内容 -->
+		<div class="map-box box">
+			<div class="map-box-list box">
+				<i class="iconfont icon-dingwei" style="color:#00c204"></i>
+				建邺区江东中路双闸街道、楠溪江西街(路口)华联超市
+			</div>
+			<div class="map-box-list box">
+				<i class="iconfont icon-dingwei" style="color:#ff7573"></i>
+				秦淮区朝天宫西街南京朝天宫国际会展中心
+			</div>
+		</div>
+		<!--地图-->
+		<div class="mapWrap">
+			<img src="imgs/map3.png" alt="" width="100%" height="100%">
+		</div>
+    </div>
+    <!-- 按钮 -->
+    <div class="btnWrap" style="bottom: 1.2rem;z-index:1;">
+    	<div class="btn-list-box">
+	    	<div class="btn-list">
+	    		<a href="javascript:;" class="btn-list-l box" title="">
+	    			<span>到达预约地点</span>
+	    		</a>
+	    		<a href="javascript:;" title="" class="jifei-btn none"></a>
+	    	</div>
+	    	<div class="btn-list">
+	    		<a href="javascript:;"  class="btn-list-r box" title="">
+	    			<span>拨打客户电话</span>
+	    		</a>
+	    	</div>
+    	</div>
+    </div>
+     <!-- 蒙层 -->
+    <div class="temp none"></div>
+   	<!-- 弹框 -->
+   	<div class="index-pop box index-info-pop">
+		<!--温馨提示-->
+   		<div class="index-info4 box none">
+			<div class="index-info-main">
+				<div class="index-info4-title">温馨提示</div>
+				<div class="index-info4-content" style="font-size:.48rem">
+					<i class="iconfont icon-tishi"></i>
+					<h2>你确定已到乘客约定上车地点了吗?</h2>
+					<p>未到准确地点会有被投诉的风险！</p>
+				</div>
+				<div class="button-box">
+					<a href="javascript:;" title="" class="queding-btn1">确定</a>
+					<a href="javascript:;" title="" class="quxiao-btn">取消</a>
+				</div>
+			</div>
+
+	    	<!--<img src="imgs/t7.png" alt="" class="imgs">-->
+	    	<!--<a href="javascript:;" title="" class="queding-btn1"></a>-->
+	    	<!--<a href="tel:13817231242" title="" class="queding-btn2"></a>-->
+	    	<!--<a href="10.html" title="" class="queding-btn3"></a>-->
+	    	<!--<a href="javascript:;" title="" class="quxiao-btn"></a>-->
+	    </div>
+		<!--拨打电话-->
+		<div class="index-info5 box none">
+			<div class="index-info-main">
+				<div class="index-info4-title">拨打电话</div>
+				<div class="index-info4-content" style="font-size:.48rem">
+					<div class="head-img-box">
+						<img src="imgs/head1.png" alt="">
+					</div>
+					<h2 style="font-size:.48rem;">立即联系乘客刘女士</h2>
+					<p style="color:#00c203;font-size:.48rem;">15625898526</p>
+				</div>
+				<div class="button-box">
+					<a href="tel:13817231242" title="" class="queding-btn2">确定</a>
+					<a href="javascript:;" title="" class="quxiao-btn">取消</a>
+				</div>
+			</div>
+		</div>
+		<!--开始计费-->
+		<div class="index-info6 box none">
+			<div class="index-info-main">
+				<div class="index-info4-title">温馨提示</div>
+				<div class="index-info4-content" style="font-size:.48rem">
+					<i class="iconfont icon-tishi"></i>
+					<h2>确认乘客已上车，开始计费吗?</h2>
+				</div>
+				<div class="button-box">
+					<a href="service.html" title="" class="queding-btn3">确定</a>
+					<a href="javascript:;" title="" class="quxiao-btn">取消</a>
+				</div>
+			</div>
+   		</div>
+	</div>
+</body>
+<script>
+		//到达预约地点
+		$(".btn-list-l").click(function(){
+			$(".temp").show();
+			$(".index-pop").show();
+            $(".index-pop>div").hide();
+            $(".index-info4").show();
+
+		})
+		//拨打客户电话
+		$(".btn-list-r").click(function(){
+			$(".temp").show();
+			$(".index-pop").show();
+            $(".index-pop>div").hide();
+            $(".index-info5").show();
+		})
+		//开始计费
+		$(".jifei-btn").click(function(){
+			$(".temp").show();
+			$(".index-pop").show();
+            $(".index-pop>div").hide();
+            $(".index-info6").show();
+		})
+		//确认1 到达预约地点
+		$(".queding-btn1").click(function(){
+			$(".temp").hide();
+			$(".index-pop").hide();
+			$(".btn-list-l").find("span").html("开始<br>计费");
+			$(".jifei-btn").show();
+
+		})
+		//确认2 拨打客服电话
+		$(".queding-btn2").click(function(){
+			$(".temp").hide();
+			$(".index-pop").hide();
+		})
+		//确认3 开始计费
+		$(".queding-btn3").click(function(){
+			$(".temp").hide();
+			$(".index-pop").hide();
+		})
+		//取消
+		$(".quxiao-btn").click(function(){
+			$(".temp").hide();
+			$(".index-pop").hide();
+		})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

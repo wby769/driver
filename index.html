@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<title>打车APP司机端</title>
+	<link rel="shortcut icon" href="favicon.ico" />
+	<link rel="bookmark" href="favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/weui.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+	<!-- 阿里图标库网址 -->
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_t1qgtc00aa0mgqfr.css">
+</head>
+<body style="height: 100%;">
+	<div class="divBox indexWrap">
+		<!-- 菜单 -->
+		<div class="navWrap box">
+			<div class="nav-box">
+				<a href="javascript:;"><i class="iconfont icon-me"></i></a>
+			</div>
+			<div class="nav-box">
+				<a href="javascript:;" class="nav-active">接单大厅</a>
+			</div>
+			<div class="nav-box">
+				<a href="javascript:;"><i class="iconfont icon-saomiao"></i></a>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="mainWrap">
+			<!-- 个人中心 -->
+			<div class="main-item item2 box none">
+				<!-- 上部内容 -->
+				<div class="item2-head box">
+					<div class="item2-head-l left">
+						<a href="user-info.html" title="">
+							<!-- 头像 -->
+							<div class="head-img">
+								<img src="imgs/head.png" alt="">
+							</div>
+							<span style="color: #fff;">阿黛尔</span>
+						</a>
+					</div>
+					<div class="item2-head-r right">
+						<a href="score.html" title="">
+							<i class="iconfont icon-chengjichaxun"></i>成绩查询
+						</a>
+					</div>
+					<!-- 覆盖层 -->
+					<div class="item2-head-info">
+						<div class="item2-head-list">
+							<p>服务分</p>
+							<span>100</span>
+						</div>
+						<div class="item2-head-list">
+							<p>评分星级</p>
+							<span>5.00</span>
+						</div>
+						<div class="item2-head-list">
+							<p>成交率</p>
+							<span>100%</span>
+						</div>
+					</div>
+				</div>
+				<!-- 下部内容 -->
+				<div class="item2-foot box">
+					<p>
+						<a href="javascript:;" title="">
+							<i class="iconfont icon-hangcheng"></i>
+							我的行程
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+					<p>
+						<a href="wallet.html" title="">
+							<i class="iconfont icon-qianbao"></i>
+							钱包
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+					<p>
+						<a href="javascript:;" title="">
+							<i class="iconfont icon-xiaoxizhongxin"></i>
+							消息中心
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+					<p>
+						<a href="javascript:;" title="">
+							<i class="iconfont icon-cheliang"></i>
+							我的车辆
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+					<p>
+						<a href="reward.html" title="">
+							<i class="iconfont icon-yaoqingjiangli"></i>
+							奖励活动
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+					<p>
+						<a href="javascript:;" title="">
+							<i class="iconfont icon-tuijian1"></i>
+							推荐有奖
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+					<p>
+						<a href="javascript:;" title="">
+							<i class="iconfont icon-shezhi"></i>
+							设置
+							<i class="iconfont icon-r right"></i>
+						</a>
+					</p>
+				</div>
+			</div>
+			<!-- 首页 -->
+			<div class="main-item item1 box">
+				<!-- 上部内容 -->
+				<div class="item1-head box">
+					<ul class="clearfix">
+						<li>
+							<label>在线</label>0.0H
+						</li>
+						<li>
+							<label>接单</label>0
+						</li>
+						<li>
+							<label>流水</label>￥0.00
+						</li>
+						<li style="position: relative;">
+							<label>成交率</label>100%
+							<!-- 切换按钮 -->
+							<a href="javascript:;" title="" class="toggle-btn">
+								<i class="iconfont icon-fenlei1"></i>
+								<i class="iconfont icon-fenlei none"></i>
+							</a>
+						</li>
+					</ul>
+					<!-- 奖励 课堂 热力图 -->
+					<div class="item1-tk none">
+						<div class="item-list box">
+							<a href="javascript:;" title="">
+								<img src="imgs/icon1.png" alt="" width="25px;">
+								<p>奖励</p>
+							</a>
+						</div>
+						<div class="item-list box">
+							<a href="javascript:;" title="">
+								<img src="imgs/icon2.png" alt="" width="28px">
+								<p>课堂</p>
+							</a>
+						</div>
+						<div class="item-list box">
+							<a href="order-map.html" title="">
+								<img src="imgs/icon3.png" alt="" width="28px">
+								<p>热力图</p>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- 下部内容 -->
+				<div class="item1-foot box">
+					<img src="imgs/map.png" alt="">
+				</div>
+			</div>
+			<!-- 发现页 -->
+			<div class="main-item item3 box none">
+				<!-- 上部内容 -->
+				<div class="item3-head box">
+					<ul class="clearfix">
+						<li>
+							<a href="special.html" title="">
+								<i class="iconfont icon-shouyezhuanche"></i>
+								<p>升级专车</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<i class="iconfont icon-xinxinicon"></i>
+								<p>加油站</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<i class="iconfont icon-weishengjian"></i>
+								<p>找厕所</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<i class="iconfont icon-fuwuzhongxinhui"></i>
+								<p>听单检测</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;" title="">
+								<i class="iconfont icon-tuijian"></i>
+								<p>推荐</p>
+							</a>
+						</li>
+						<li>
+							<a href="service-center.html" title="">
+								<i class="iconfont icon-msnui-caller"></i>
+								<p>客服中心</p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 通用按钮 -->
+			<div class="btnWrap">
+				<div class="btn-full">
+					<div class="btn1-box" style="width: 30%;">
+						<div class="btn-bg">
+							<a href="javascript:;" title="" style="color: #51ba32;">模式</a>
+						</div>
+					</div>
+					<div class="btn2-box" style="width: 40%;">
+						<div class="btn-bg-center">
+							<a href="javascript:;" title="" style="color: #fff;" class="chuche-btn">出车</a>
+							<a href="index-info.html" title="" class="qiangdan-btn none"></a>
+						</div>
+					</div>
+					<div class="btn3-box" style="width: 30%;">
+						<div class="btn-bg">
+							<a href="javascript:;" title="" style="color: #999;">收车</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+    <!-- 蒙层 -->
+    <div class="temp none"></div>
+   	<!-- 弹框 -->
+   	<div class="index-pop box">
+		<!--听单中弹框-->
+   		<div class="index-info1 box none">
+			<div class="index-info-main">
+				<div class="index-info1-title">
+					<h1>据您1.3公里</h1>
+					<p>实时 普通型</p>
+				</div>
+				<div class="index-info1-content">
+					<div class="map-box-list box san-ellipsis">
+						<i class="iconfont icon-dingwei" style="color:#00c204"></i>
+						建邺区江东中路双闸街道楠溪、江西街（路口）华联超市
+					</div>
+					<div class="map-box-list box san-ellipsis">
+						<i class="iconfont icon-dingwei" style="color:#ff7573"></i>
+						秦淮区朝天宫西街南京朝天宫国际会展中心
+					</div>
+				</div>
+				<div class="index-info1-foot">
+					<a href="javascript:;" class="open-btn">点击查看地图</a>
+				</div>
+			</div>
+			<!--三角-->
+			<div class="sanjiao"></div>
+			<!--关闭按钮-->
+			<a href="javascript:;" title="" class="colse-btn">
+				<i class="iconfont icon-cuo"></i>
+			</a>
+	    </div>
+		<!--地图弹框-->
+		<div class="index-info2 box none">
+			<div class="index-info-main">
+				<div class="index-info2-title">
+					<a href="javascript:;">
+						<h1>点击查看订单详情</h1>
+					</a>
+				</div>
+				<div class="index-info2-content">
+					<img src="imgs/map4.png" alt="">
+				</div>
+			</div>
+			<!--三角-->
+			<div class="sanjiao"></div>
+			<!--关闭按钮-->
+			<a href="javascript:;" title="" class="colse-btn">
+				<i class="iconfont icon-cuo"></i>
+			</a>
+		</div>
+		<!--订单已被抢弹框-->
+		<div class="index-info3 box none">
+			<div class="index-info-main">
+				<div class="index-info3-title">
+					<h1>订单已被抢</h1>
+				</div>
+				<div class="index-info3-content">
+					<img src="imgs/loding.png" alt="">
+					<p>奋力加载中，请稍后</p>
+				</div>
+			</div>
+			<!--三角-->
+			<div class="sanjiao" style="border-top:.26rem solid #fff;"></div>
+			<!--关闭按钮-->
+			<a href="javascript:;" title="" class="colse-btn">
+				<i class="iconfont icon-cuo"></i>
+			</a>
+		</div>
+   	</div>
+</body>
+<script>
+	//菜单切换
+	$(".navWrap").find(".nav-box").each(function(index){
+		$(this).click(function(){
+			$(this).find("a").addClass("nav-active");
+			$(this).siblings().find("a").removeClass("nav-active");
+			$(".mainWrap").find(".main-item").hide().eq(index).show();
+		})
+	})
+	//接单大厅功能
+	$(".toggle-btn").click(function(){
+		$(this).find("i").toggle();
+		$(".item1-tk").toggle();
+	})
+	//打开弹框
+	$(".btn-bg-center").find(".chuche-btn").click(function(){
+		$(".temp").show();
+		$(".index-pop").show();
+		$(".index-info1").show();
+        $(".index-info2").hide();
+        $(".index-info3").hide();
+		$(this).text("抢单");
+		$(".qiangdan-btn").show();
+	})
+	//关闭弹框
+	$(".colse-btn").click(function(){
+		$(".temp").hide();
+		$(".index-pop").hide();
+		$(".btn-bg-center").find(".chuche-btn").text("出车");
+		$(".qiangdan-btn").hide();
+	})
+	//点击查看地图
+	$(".open-btn").click(function(){
+        $(".index-info2").show();
+        $(".index-info1").hide();
+        $(".index-info3").hide();
+	})
+</script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
